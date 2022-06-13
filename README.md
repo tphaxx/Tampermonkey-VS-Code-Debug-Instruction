@@ -104,6 +104,18 @@ Open the javascript file in VS-Code. Create a [launch config](https://code.visua
 
 > Your Tampermonkey script need a event or action to start.
 
+## Add first breakpoint instruction
+
+To reach the javascript you need a statement (`debugger`) like this:
+```javascript
+(function() {
+    'use strict';
+
+    debugger;
+    // Your code here...
+})();
+```
+
 ## Annotation
 
 The debugging javascript is not the same file as the written script. The complete content of the Tampermonkey script including all javascript files (*multiple requests are possible*) is displayed in a separate tab in VS Code. This tab is in read-only mode. You must always close this tab after debugging.
